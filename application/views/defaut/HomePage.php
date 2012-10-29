@@ -1,7 +1,9 @@
 <?php
+    include 'Header.php';
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+?>
+    <div id="wrap_center">
+    </div>
+<?php 
+include 'Footer.php';
 ?>

@@ -5,7 +5,218 @@
     Description:
         Purpose of the stylesheet follows.
 */
+/* Reset ================================================================================= */
+* { margin:0; padding:0; }
+html {
+    height: 100%;
+    width: 100%;
+}
+.catalog-product-compare-index > div { min-width:600px;}
 
+body          { background:url(../images/body-bg.gif) repeat-x center top #ffffff; font-family:Arial; font-size:0.75em; line-height:1.5em; color:#989898; text-align:center; min-width:1205px; }
+body > .wrapper { position:relative; }
+.wrapper-tail{}
+
+img           { border:0; vertical-align:top; }
+
+a             { color:#b2b2b2; 	text-decoration:none;}
+a:hover       { text-decoration:none; }
+:focus        { outline:0; }
+
+/* Headings */
+h1            { font-size:20px; font-weight:normal; line-height:1.15; margin-bottom:0px; }
+h2            { font-size:18px; font-weight:normal; line-height:1.25;margin-bottom:7px;}
+h3            { font-size:16px; font-weight:bold; line-height:1.25; margin-bottom:7px;}
+h4            { font-size:14px; font-weight:bold; margin-bottom:7px; }
+h5            { font-size:12px; font-weight:bold; margin-bottom:7px;}
+h6            { font-size:11px; font-weight:bold; margin-bottom:7px;}
+
+/* Forms */
+form          { display:inline; }
+fieldset      { border:0; }
+legend        { display:none; }
+
+/* Table */
+table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
+caption,th,td { vertical-align:center; text-align:left; font-weight:normal; }
+
+/* Content */
+strong        { font-weight:bold; }
+address       { font-style:normal; margin-bottom:5px;}
+cite          { font-style:normal; }
+q,
+blockquote    { quotes:none; }
+q:before,
+q:after       { content:''; }
+small,big     { font-size:1em; }
+sup           { font-size:1em; vertical-align:top; }
+
+/* Lists */
+ul,ol         { list-style:none; }
+
+/* Tools */
+.hidden       { display:block !important; border:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important; width:0 !important; height:0 !important; overflow:hidden !important; }
+.nobr         { white-space:nowrap !important; }
+.wrap         { white-space:normal !important; }
+.a-left       { text-align:left !important; }
+.a-center     { text-align:center !important; }
+.a-right      { text-align:right !important; }
+.v-top        { vertical-align:top; }
+.v-middle     { vertical-align:middle; }
+.f-left,
+.left         { float:left !important; }
+.f-right,
+.right        { float:right !important; }
+.f-none       { float:none !important; }
+.f-fix        { float:left; width:100%; }
+.no-display   { display:none; }
+.no-margin    { margin:0 !important; }
+.no-padding   { padding:0 !important; }
+.no-bg        { background:none !important; }
+/*======================public================================================*/
+.clear{
+    clear: both;
+}
+
+
+/* ======================================================================================= */
+#wrapper{
+    margin-top: 8px;
+}
+/*========================HEADER========================*/
+#wrap_header{
+    margin: auto;
+    width: 1000px;
+/*    height: 200px;*/
+    /*background: aqua;*/
+    text-align: left;
+}
+#banner_header{
+    padding-top: 50px;
+}
+.stitle_web{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: crimson;
+    font-variant-caps: all-small-caps;
+}
+#nav_menu{
+    margin-top: 30px;
+}
+.header-row-1 {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#393838', endColorstr='#282828'); /* IE6-9 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#393838), to(#282828));
+	background: -moz-linear-gradient(top,  #393838,  #282828); /* firefox 3.6+ */
+	background: -o-linear-gradient(top,  #393838,  #282828); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #393838,  #282828); /* IE10+ */
+	border-radius:4px; 
+	position:relative;
+	margin-bottom:20px;
+	}
+.header-row-1 .header-menu {overflow:hidden;}
+.header-row-1 .header-menu li:first-child {background:none;}
+.header-row-1 .header-menu li {height: 40px; line-height: 40px; float:left; background:url(../images/header-line-li.gif) repeat-y top left;}
+.header-row-1 .header-menu li a {
+	font-size:13px; 
+	color:#EFEFAF;
+	line-height:20px; 
+	padding:11px 18px 16px; 
+	display:inline-block;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+.header-row-1 .header-menu li a:hover {color:#fff;}
+.header-row-1 .form-search { text-align:right; }
+.header-row-1 .form-search .search-autocomplete img{ float:left; margin-right:10px; margin-bottom:10px;}
+.header-row-1 .form-search .search-autocomplete { z-index:999; }
+.header-row-1 .form-search .search-autocomplete ul { border:1px solid #ddd; background-color:#fff; }
+.header-row-1 .form-search .search-autocomplete li { padding:20px; border-bottom:1px solid #e9e9e9; cursor:pointer; text-align:left; }
+.header-row-1 .form-search .search-autocomplete li .description{ font-size:12px; padding-top:12px;}
+.header-row-1 .form-search .search-autocomplete li { font-size:12px;}
+.header-row-1 .form-search .search-autocomplete li.suggest{ padding:7px;}
+.header-row-1 .form-search .search-autocomplete li.suggest:hover{  background:#92b802!important;}
+.header-row-1 .form-search .search-autocomplete li .amount-2 { float:right; font-weight:bold; }
+.header-row-1 .form-search .search-autocomplete li.selected {}
+.header-container .top-container { clear:both; text-align:right; }
+.header .block-currency {float:right; border:none; margin:0 0 0 30px; padding:0; background:none;}
+.header .block-currency .block-content {padding:0; border:0; float:right; clear:right; background:none; margin:0;}
+.header  .block-currency .block-title {
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:none;
+	background:none; 
+	margin:0px;
+	border:0px; 
+	padding:0px 10px 0 0; 
+	float:left; 
+	display:inline-block; 
+	color:#989898;
+	 filter: progid:none; /* IE6-9 */;
+	}
+.header  .block-currency .block-title strong,
+.form-language label {	
+	font-size:12px;
+	line-height:normal; 
+	font-weight:normal; 
+	padding-top:4px; 
+	float:left;
+	text-align:right; 
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color:#989898;
+}
+.header select {font-size:11px; font-family:Arial, Helvetica, sans-serif; line-height:normal; background:#ccc; padding:3px;	border:1px solid #ddd !important;}
+.form-language {float:right;}
+#search_mini_form {float:right; position:relative;}
+.header-row-1 .form-search {
+	font-size:16px; 
+	line-height:normal; 
+	border-radius:3px 3px 0 0; 
+	padding:0; 
+	margin:-33px 0 0 0;
+	padding:0 9px 0 0;
+	}
+.header-row-1 .form-search .input-text {background:#fbfbfb; width:187px; border:none; float:left; padding:5px 20px 6px 6px;  border-radius:30px;}
+.header-row-1 .form-search button.button {float:right; margin:5px 08px 0 11px; padding-right:5px;} 
+.header-row-1 .form-search button.button > span {text-indent:-55555px; height:12px; width:6px; display:block; padding:0px; filter: progid:none; /* IE6-9 */; background:url(../images/btn-search.png) 0 0 no-repeat; }
+.header-row-1 .form-search button.button span span {display:block; }
+.header-row-1 .form-search button.button:hover span {background-position:0 bottom;}
+.header-row-1 .form-search label {background:url(../images/form-search.png) no-repeat left top; display:block; text-indent:-777777px; height:9px; width:9px; float:left; font-size:0px; margin:10px 9px 0 0;}
+/* ======================================================================================= */
+#wrap_main{
+     margin: auto;
+     width: 1000px;
+}
+/* ======================================================================================= */
+#wrap_left{
+    width: 200px;
+    height: 800px;
+    background: activeborder;
+    float: left;
+}
+/* ======================================================================================= */
+#wrap_right{
+    width: 200px;
+    height: 800px;
+    background: chartreuse;
+    float: right;
+}
+/* ======================================================================================= */
+#wrap_footer{
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background: darkseagreen;
+}
+/* ======================================================================================= */
+#wrap_center{
+    width: 600px;
+    height: 800px;
+    background: darkgoldenrod;
+    float: left;
+}
+/* ======================================================================================= */
 root { 
     display: block;
 }

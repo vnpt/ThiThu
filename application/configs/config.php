@@ -15,6 +15,8 @@ define("ROOT_PATH", "http://localhost/ThiThuDH/");
 define("ROOT_PATH_2", "http://localhost/ThiThuDH");
 define("NUMBER_ARTICLE_PER_PAGE", 10);
 define("CLASS_PATH", APPLICATION_PATH . "/models/basic");
+
+define("PUBLIC_PATH", ROOT_PATH . "public");
 require (CLASS_PATH . "/User.php");
 
 ?>
