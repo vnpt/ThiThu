@@ -13,7 +13,17 @@ html {
 }
 .catalog-product-compare-index > div { min-width:600px;}
 
-body          { background:url(../images/body-bg.gif) repeat-x center top #ffffff; font-family:Arial; font-size:0.75em; line-height:1.5em; color:#989898; text-align:center; min-width:1205px; }
+body          { 
+    background:url(../images/body-bg.gif) repeat-x center top #ffffff; 
+    font-family:Arial; 
+    line-height:1.5em; 
+    color:#989898; 
+    text-align:center; 
+    min-width:1205px; 
+    font-family: Arial;
+    font-size: 11px;
+    color: black;
+}
 body > .wrapper { position:relative; }
 .wrapper-tail{}
 
@@ -187,6 +197,8 @@ ul,ol         { list-style:none; }
 #wrap_main{
      margin: auto;
      width: 1000px;
+     /*padding: 3px;*/
+     /*background: #92b802;*/
 }
 /* ======================================================================================= */
 #wrap_left{

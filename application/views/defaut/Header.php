@@ -3,6 +3,7 @@
     <head>
         <title><?php if (isset($results['titlePage'])) echo $results['titlePage']; else echo "Thi Thử đại học"; ?></title>
         <link href="<?php echo ROOT_PATH ?>public/css/main.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?php echo ROOT_PATH ?>public/css/doTesting.css" rel="stylesheet" type="text/css" media="all" />
     </head>
     <body>
         <div id="wrapper">
@@ -14,7 +15,7 @@
                     <div class="header-row-1"> 
                         <ul class="header-menu">
                             <li><a href="<?php echo ROOT_PATH ?>">Trang chủ</a></li>
-                            <li><a href="<?php echo ROOT_PATH ?>gioi-thieu.html">Giới thiệu</a></li>
+                            <li><a href="<?php echo ROOT_PATH ?>index.php?action=lambai">Làm bài</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>tin-tuc/">Tin tức</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>dich-vu/">Dịch vụ</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>sitemap.html">Sitemap</a></li>
@@ -40,13 +41,7 @@
                 </div>
             </div>
             <div id="wrap_main">
-                <div id="wrap_left">
                 
-                </div>
-                
-                <div id="wrap_right">
-                
-                </div>
             
             
             

@@ -1,0 +1,162 @@
+/* 
+    Document   : doTesting
+    Created on : Oct 31, 2012, 12:09:37 AM
+    Author     : DAT
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.wrap_doTest_center{
+    text-align: center;
+
+}
+.boxstandard {
+    background-color: #E8EFF5;
+    margin: 10px 10px;
+    /*    width: 98%;*/
+}
+.boxstandard .boxheader {
+    background: url(../images/top.jpg) repeat-x;
+}
+
+.boxstandard .boxcontent2 {
+    border-left: 1px solid #B4C9DA;
+}
+
+.boxstandard .boxcontent div.body {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px 20px 40px;
+    border: 1px solid #73addb;
+    border-radius: 10px;
+    background: url(../images/right.jpg) repeat-y right;
+}
+.boxstandard .boxcontent2 div.body {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px 20px 40px;
+    /*    border: 1px solid #73addb;
+        border-radius: 10px;*/
+    /*background: url(../images/right.jpg) repeat-y right;*/
+}
+
+.bgvote {
+    background-image: url(../images/bg_vote.gif);
+    background-repeat: no-repeat;
+    width: 899px;
+    height: 41px;
+    text-align: left;
+}
+.wrap_doTest_center tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.wrap_doTest_center tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr.bgr_info {
+    background-image: url(../images/bgr_show_info.gif);
+    background-repeat: repeat-x;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+}
+
+.wrap_doTest_center td.text_left {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    border-right: solid 1px #73ADDB;
+}
+
+.wrap_doTest_center td.text_right {
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    border-right: solid 1px #73ADDB;
+}
+
+.start_quiz {
+    background: url(../images/start_todo_quiz.gif);
+    width: 223px;
+    height: 66px;
+    border-width: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+td.text_italic {
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    font: Tahoma;
+    border-right: solid 1px #73ADDB;
+}
+
+
+.boxstandard .boxheader2 {
+    background: url(../images/top-2.jpg) repeat-x;
+}
+.boxstandard .boxheader2 div {
+    background: url(../images/top-left-2.jpg) no-repeat top left;
+}
+.boxstandard .boxheader2 div div {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-indent: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: url(../images/top-right-2.jpg) no-repeat top right;
+}
+
+.que {
+    padding: 10px;
+    border: 1px solid #73ADDB;
+    border-image: initial;
+    background-color: #DBEBF8;
+    font-family: Verdana;
+    margin: 0px auto;
+    width: 90%;
+    text-align: left;
+    margin: 10px auto 15px auto;
+    border: 1px solid #73addb;
+    clear: both;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.que .info {
+    float: left;
+    margin: 5px;
+    width: 8%;
+}
+.firstletter {
+    font-size: 20px;
+    font-weight: bold;
+}
+.que .content {
+    width: 94%;
+    margin: 0px;
+    float: right;
+    margin: 5px;
+}
+
+.que .qtext {
+    margin-bottom: 1.5em;
+}
+
+.que .prompt{
+    font-size: 13px;
+    color: crimson;
+}
