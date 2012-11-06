@@ -48,7 +48,7 @@ legend        { display:none; }
 
 /* Table */
 table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
-caption,th,td { vertical-align:center; text-align:left; font-weight:normal; }
+caption,th,td { }
 
 /* Content */
 strong        { font-weight:bold; }
@@ -216,10 +216,11 @@ ul,ol         { list-style:none; }
 }
 /* ======================================================================================= */
 #wrap_footer{
-    margin: auto;
+    margin: 10px auto;
     width: 1000px;
-    height: 200px;
-    background: darkseagreen;
+    text-align: center;
+    /*height: 200px;*/
+    /*background: darkseagreen;*/
 }
 /* ======================================================================================= */
 #wrap_center{

@@ -28,12 +28,12 @@
     padding: 20px 10px 20px 40px;
     border: 1px solid #73addb;
     border-radius: 10px;
-    background: url(../images/right.jpg) repeat-y right;
+    /*background: url(../images/right.jpg) repeat-y right;*/
 }
 .boxstandard .boxcontent2 div.body {
     margin: 0 auto;
     text-align: center;
-    padding: 20px 10px 20px 40px;
+    padding: 20px 10px 0px 40px;
     /*    border: 1px solid #73addb;
         border-radius: 10px;*/
     /*background: url(../images/right.jpg) repeat-y right;*/
@@ -159,4 +159,21 @@ td.text_italic {
 .que .prompt{
     font-size: 13px;
     color: crimson;
+}
+
+.mdl-align {
+    text-align: center;
+}
+
+.replystop {
+    width: 314px;
+    height: 55px;
+    border: 0;
+    background: white url(../images/reply_and_stop.gif) no-repeat 0 0;
+    cursor: pointer;
+}
+table.thongke {
+    background: #3387CF url(../images/thongke_bg.gif) repeat-x 0 0;
+    border-top: solid 4px #9BD0FC;
+    height: 50px;
 }

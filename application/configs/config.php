@@ -17,6 +17,10 @@ define("NUMBER_ARTICLE_PER_PAGE", 10);
 define("CLASS_PATH", APPLICATION_PATH . "/models/basic");
 
 define("PUBLIC_PATH", ROOT_PATH . "public");
+require (CLASS_PATH . "/Admin.php");
 require (CLASS_PATH . "/User.php");
+require (CLASS_PATH . "/QuestionGroup.php");
+require (CLASS_PATH . "/Question.php");
+require (CLASS_PATH . "/Exam.php");
 
 ?>

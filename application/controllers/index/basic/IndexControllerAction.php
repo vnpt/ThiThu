@@ -16,5 +16,12 @@ class IndexControllerAction{
         else
             require APPLICATION_PATH.'/views/defaut/StartTest.php';
     }
+    
+    public function nopBai(){
+         foreach ($_POST["answer"] as $key=>$array)
+            foreach ($array as $key1 => $value)
+                echo $value;
+        
+    }
 }
 ?>
