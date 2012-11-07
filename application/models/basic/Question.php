@@ -13,12 +13,12 @@
 class Question {
     //put your code here
     private $question_id = null;
-    private $question_groupid = null;
-    private $question_description = null;
+    private $question_groupid = 0;
+    private $question_content = null;
     private $question_answer = null;
-    private $question_lever = null;
-    private $question_count_true = null;
-    private $question_count_false = null;
+    private $question_level = 0;
+    private $question_count_true = 0;
+    private $question_count_false = 0;
     private $question_answer_A =null;
     private $question_answer_B = null;
     private $question_answer_C = null;
@@ -32,14 +32,14 @@ class Question {
         if (isset($data['question_groupid']))
             $this->question_groupid = $data['question_groupid'];
 
-        if (isset($data['question_description']))
-            $this->question_description = $data['question_description'];
+        if (isset($data['question_content']))
+            $this->question_content = $data['question_content'];
 
         if (isset($data['question_answer']))
             $this->question_answer = $data['question_answer'];
 
-        if (isset($data['question_lever']))
-            $this->question_lever = $data['question_lever'];
+        if (isset($data['question_level']))
+            $this->question_level = $data['question_level'];
 
         if (isset($data['question_answer_A']))
             $this->question_answer_A = $data['question_answer_A'];
@@ -72,12 +72,12 @@ class Question {
         $this->question_groupid = $question_groupid;
     }
 
-    public function getQuestion_description() {
-        return $this->question_description;
+    public function getQuestion_content() {
+        return $this->question_content;
     }
 
-    public function setQuestion_description($question_description) {
-        $this->question_description = $question_description;
+    public function setQuestion_content($question_content) {
+        $this->question_content = $question_content;
     }
 
     public function getQuestion_answer() {
@@ -88,12 +88,12 @@ class Question {
         $this->question_answer = $question_answer;
     }
 
-    public function getQuestion_lever() {
-        return $this->question_lever;
+    public function getQuestion_level() {
+        return $this->question_level;
     }
 
-    public function setQuestion_lever($question_lever) {
-        $this->question_lever = $question_lever;
+    public function setQuestion_level($question_level) {
+        $this->question_level = $question_level;
     }
 
     public function getQuestion_count_true() {
@@ -111,7 +111,7 @@ class Question {
     public function setQuestion_count_false($question_count_false) {
         $this->question_count_false = $question_count_false;
     }
-    
+
     public function getQuestion_answer_A() {
         return $this->question_answer_A;
     }

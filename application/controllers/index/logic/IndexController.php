@@ -19,8 +19,15 @@
         case 'nopbai':
             $indexControllerAction->nopBai();
             break;
+        case 'login':
+            $indexControllerAction->dangNhap();
+            break;
+        case 'reg':
+            $indexControllerAction->dangKi();
+            break;
         default :
             $indexControllerAction->viewHomePage();
+            break;
         
     }
     

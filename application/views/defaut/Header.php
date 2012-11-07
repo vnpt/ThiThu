@@ -16,8 +16,8 @@
                         <ul class="header-menu">
                             <li><a href="<?php echo ROOT_PATH ?>">Trang chủ</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=lambai">Làm bài</a></li>
-                            <li><a href="<?php echo ROOT_PATH ?>tin-tuc/">Tin tức</a></li>
-                            <li><a href="<?php echo ROOT_PATH ?>dich-vu/">Dịch vụ</a></li>
+                            <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=login">Đăng nhập</a></li>
+                            <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=reg">Đăng kí</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>sitemap.html">Sitemap</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>lien-he.html">Liên hệ</a></li> 
                         </ul>		   <form id="search_mini_form" action="#" method="get">

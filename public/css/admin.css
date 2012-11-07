@@ -1,0 +1,17 @@
+/* 
+    Document   : admin
+    Created on : 07-11-2012, 15:13:52
+    Author     : DAT
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.create_question{
+    display: block;
+        
+}
+.create_question textArea{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

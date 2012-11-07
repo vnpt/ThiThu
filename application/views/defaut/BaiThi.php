@@ -28,7 +28,7 @@ include 'Header.php';
                                         <tbody>
                                             <tr class="r0">
                                                 <td class="c0 control">
-                                                    <input  id="" name="answer[<?php echo $i ?>][]" type="radio" value="<?php echo $i ?>_A" alt="0,12 s." onclick="limit_checkbox('answer[<?php echo $i ?>][]',this)" >        </td>
+                                                    <input  id="" name="answer[<?php echo $i; //id cua cau hoi ?>][]" type="radio" value="<?php echo $i ?>_A" alt="0,12 s." onclick="limit_checkbox('answer[<?php echo $i ?>][]',this)" >        </td>
                                                 <td class="c1 text ">
                                                     <label for="">
                                                         A. 0,12 s.          </label>

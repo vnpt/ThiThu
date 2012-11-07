@@ -15,13 +15,13 @@ class User {
     private $user_id = null;
     private $user_name = null;
     private $user_password = null;
-    private $user_lever = null;
+    private $user_level = null;
     private $user_email = null;
     private $user_sex = null;
     private $user_address = null;
     private $user_phone = null;
     private $user_age = null;
-    private $lever_exam_current = null;
+    private $level_exam_current = null;
     private $date_reg = null;
     private $user_fullname = null;
     
@@ -37,8 +37,8 @@ class User {
         if (isset($data['user_password']))
             $this->user_password = $data['user_password'];
         
-        if (isset($data['user_lever']))
-            $this->user_lever = $data['user_lever'];
+        if (isset($data['user_level']))
+            $this->user_level = $data['user_level'];
         
         if (isset($data['user_email']))
             $this->user_email = $data['user_email'];
@@ -55,8 +55,8 @@ class User {
         if (isset($data['user_age']))            
             $this->user_age = $data['user_age'];
         
-        if (isset($data['lever_exam_current']))            
-            $this->lever_exam_current = $data['lever_exam_current'];
+        if (isset($data['level_exam_current']))            
+            $this->level_exam_current = $data['level_exam_current'];
         
         if (isset($data['date_reg']))
             $this->date_reg = $data['date_reg'];
@@ -89,12 +89,12 @@ class User {
         $this->user_password = $user_password;
     }
 
-    public function getUser_lever() {
-        return $this->user_lever;
+    public function getUser_level() {
+        return $this->user_level;
     }
 
-    public function setUser_lever($user_lever) {
-        $this->user_lever = $user_lever;
+    public function setUser_level($user_level) {
+        $this->user_level = $user_level;
     }
 
     public function getUser_email() {
@@ -138,11 +138,11 @@ class User {
     }
     
     public function getLever_exam_current() {
-        return $this->lever_exam_current;
+        return $this->level_exam_current;
     }
 
-    public function setLever_exam_current($lever_exam_current) {
-        $this->lever_exam_current = $lever_exam_current;
+    public function setLever_exam_current($level_exam_current) {
+        $this->level_exam_current = $level_exam_current;
     }
     public function getDate_reg() {
         return $this->date_reg;
