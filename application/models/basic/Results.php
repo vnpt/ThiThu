@@ -15,6 +15,7 @@ class Results {
     private $result_id = null;
     private $user_id = null;
     private $test_scores = null;
+    private $test_detail_scores = null;
     private $exam_id = null;
     private $result_pubDate = null;
     
@@ -28,6 +29,9 @@ class Results {
         
         if (isset($data['test_scores']))
             $this->test_scores = $data['test_scores'];
+        
+        if (isset($data['test_detail_scores']))
+            $this->test_detail_scores = $data['test_detail_scores'];
 
         if (isset($data['exam_id']))
             $this->exam_id = $data['exam_id'];
@@ -60,7 +64,24 @@ class Results {
     public function setTest_scores($test_scores) {
         $this->test_scores = $test_scores;
     }
+    
+    public function getTest_detail_scores() {
+        return $this->test_detail_scores;
+    }
 
+    public function setTest_detail_scores($test_detail_scores) {
+        $this->test_detail_scores = $test_detail_scores;
+    }
+
+    public function getResult_pubDate() {
+        return $this->result_pubDate;
+    }
+
+    public function setResult_pubDate($result_pubDate) {
+        $this->result_pubDate = $result_pubDate;
+    }
+
+        
     public function getExam_id() {
         return $this->exam_id;
     }

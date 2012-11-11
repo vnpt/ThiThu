@@ -80,7 +80,7 @@ include 'Header.php';
                         </tr>
                     </tbody></table>
                 <br>
-                <input type="button" value="" onclick="javascript: window.open('<?php echo ROOT_PATH ?>index.php?typeManager=lambai&id=12', '_self', '');" class="start_quiz">
+                <input type="button" value="" onclick="javascript: window.open('<?php echo ROOT_PATH ?>index.php?typeManager=lambai', '_self', '');" class="start_quiz">
 
 
                 <br><br>
@@ -89,7 +89,8 @@ include 'Header.php';
                     <tbody><tr>
                             <td width="10" colspan="2"></td><td align="left" class="quiz_vote" width="100">&nbsp;Đánh giá: &nbsp;1085</td><td align="left">&nbsp; <img src="http://hocmai.vn/theme/hocmai/pix/t/star_vote_active.gif" alt="start" align="top" border="0"> <img src="http://hocmai.vn/theme/hocmai/pix/t/star_vote_active.gif" alt="start" align="top" border="0"> <img src="http://hocmai.vn/theme/hocmai/pix/t/star_vote_active.gif" alt="start" align="top" border="0"> <img src="http://hocmai.vn/theme/hocmai/pix/t/star_vote_active.gif" alt="start" align="top" border="0"> <img src="http://hocmai.vn/theme/hocmai/pix/t/star_vote_blur.gif" alt="start" align="top" border="0"></td><td align="right" class="quiz_numberattempts">Số người làm bài:  64430</td><td width="10" colspan="2"></td>
                         </tr>
-                    </tbody></table>
+                    </tbody>
+                </table>
 
             </div>
         </div>

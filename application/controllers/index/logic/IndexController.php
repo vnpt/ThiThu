@@ -5,6 +5,7 @@
  * and open the template in the editor.
  */
     require APPLICATION_PATH . '/controllers/index/basic/IndexControllerAction.php';
+    session_start();
     $typeManager= isset($_GET['typeManager']) ? $_GET['typeManager'] : "";
         
     
@@ -13,9 +14,12 @@
         $indexControllerAction = new IndexControllerAction();
     
     switch ($typeManager){
-        case 'lambai':
-            $indexControllerAction->viewStartTest();
+        case 'chuanbi':
+            $indexControllerAction->chuanBi();
             break;
+        case 'lambai':
+            $indexControllerAction->lamBai();
+            break;;
         case 'nopbai':
             $indexControllerAction->nopBai();
             break;

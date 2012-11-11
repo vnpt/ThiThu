@@ -137,11 +137,11 @@ class User {
         $this->user_age = $user_age;
     }
     
-    public function getLever_exam_current() {
+    public function getLevel_exam_current() {
         return $this->level_exam_current;
     }
 
-    public function setLever_exam_current($level_exam_current) {
+    public function setLevel_exam_current($level_exam_current) {
         $this->level_exam_current = $level_exam_current;
     }
     public function getDate_reg() {

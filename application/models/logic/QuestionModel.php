@@ -137,7 +137,7 @@ class QuestionModel {
         return ( array("results" => $list, "totalRows" => $totalRows) );
     }
 
-    public static function getByLever($level) {
+    public static function getByLevel($level) {
         $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         $sql1 = "SELECT * FROM tbl_question 
                 WHERE question_level = ?
@@ -154,15 +154,19 @@ class QuestionModel {
         $conn = null;
         return ( array("results" => $list, "totalRows" => $totalRows) );
     }
-
-    public static function getByGroupId_Lever($group_id, $level) {
+    
+    
+    //lấy random $number câu hỏi có thông tin $group_id và $level
+    public static function getByGroupId_Level($group_id, $level, $number) {
         $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         $sql1 = "SELECT * FROM tbl_question 
-                WHERE question_groupid = ? and question_level = ?";
+                WHERE question_groupid = ? and question_level = ?
+                ORDER BY RAND() LIMIT ?";
 
         $st = $conn->prepare($sql1);
         $st->bindValue(1, $group_id,PDO::PARAM_INT);
         $st->bindValue(2, $level,PDO::PARAM_INT);
+        $st->bindValue(3, $number,PDO::PARAM_INT);
         $st->execute();
         $list = array();
         while ($row = $st->fetch()) {

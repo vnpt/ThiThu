@@ -27,7 +27,7 @@ class UserModel {
         $st->bindValue(5, $user->getUser_sex(),PDO::PARAM_STR);
         $st->bindValue(6, $user->getUser_address(),PDO::PARAM_STR);
         $st->bindValue(7, $user->getUser_phone(),PDO::PARAM_STR);
-        $st->bindValue(8, $user->getLever_exam_current(),PDO::PARAM_INT);
+        $st->bindValue(8, $user->getLevel_exam_current(),PDO::PARAM_INT);
         $st->bindValue(9, $user->getDate_reg(),PDO::PARAM_INT);
         
         $result= $st->execute();
@@ -61,7 +61,7 @@ class UserModel {
         $st->bindValue(4, $user->getUser_sex(),PDO::PARAM_STR);
         $st->bindValue(5, $user->getUser_address(),PDO::PARAM_STR);
         $st->bindValue(6, $user->getUser_phone(),PDO::PARAM_STR);
-        $st->bindValue(7, $user->getLever_exam_current(),PDO::PARAM_INT);
+        $st->bindValue(7, $user->getLevel_exam_current(),PDO::PARAM_INT);
         $st->bindValue(8, $user_id);
         $st->execute();
         $conn = null;
@@ -103,6 +103,22 @@ class UserModel {
 
         $st = $conn->prepare($sql1);
         $st->bindValue(1, $user_id,PDO::PARAM_INT);        
+        $st->execute();
+        $conn = null;
+        $row = $st->fetch();
+        if($row)
+            return   new User($row);          
+        return null;
+        
+        
+    }
+    public static function getByUserName($user_name){
+        $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+        $sql1 = "SELECT * FROM tbl_user 
+                WHERE user_name = ?";
+
+        $st = $conn->prepare($sql1);
+        $st->bindValue(1, $user_name,PDO::PARAM_STR);        
         $st->execute();
         $conn = null;
         $row = $st->fetch();

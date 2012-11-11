@@ -12,7 +12,7 @@
  */
 class ResulstModel {
     //put your code here
-    //lấy 5 bài thi gần nhất của người dùng
+    //lấy 5 bài thi gần nhất của người dùng, sắp xếp theo thời gian gần nhất
     //input: user_id
     public static function get5ExamRecent($user_id){
         $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));

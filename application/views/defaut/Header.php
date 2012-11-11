@@ -10,12 +10,21 @@
             <div id="wrap_header">
                 <div id="banner_header">
                     <p><a class="stitle_web">Thi thử đại học</a></p>
+                    <?php 
+                    $status = "";
+                    if(isset($_SESSION["username"]))
+                        $status = $_SESSION["username"];
+                    else
+                        $status = $results["status"];                        
+                    echo "<a class='hello_user'>Xin chào  ".$_SESSION["username"]."</a>";
+                    ?>
+                    
                 </div>
                 <div id="nav_menu">
                     <div class="header-row-1"> 
                         <ul class="header-menu">
                             <li><a href="<?php echo ROOT_PATH ?>">Trang chủ</a></li>
-                            <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=lambai">Làm bài</a></li>
+                            <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=chuanbi">Làm bài</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=login">Đăng nhập</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>index.php?typeManager=reg">Đăng kí</a></li>
                             <li><a href="<?php echo ROOT_PATH ?>sitemap.html">Sitemap</a></li>
